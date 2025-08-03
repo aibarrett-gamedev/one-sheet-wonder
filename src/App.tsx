@@ -1,9 +1,18 @@
-import './index.css';
+import CharacterSheet from "./components/CharacterSheet";
 
-export default function App() {
+function App() {
   return (
-    <main className="flex h-screen items-center justify-center bg-stone-200">
-      {/* Character sheet goes here */}
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "grid",
+        placeItems: "center",
+        background: "linear-gradient(135deg,#1e1e30,#303068)",
+      }}
+    >
+      <CharacterSheet />
     </main>
   );
 }
+
+export default App;
